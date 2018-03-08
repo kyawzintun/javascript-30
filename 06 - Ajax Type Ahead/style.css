@@ -1,0 +1,57 @@
+html {
+  background: #13848E;
+  width: 100%;
+}
+
+html, body { 
+  margin: 0; 
+  padding: 0;
+  min-height: 100vh;
+}
+
+.search {
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  margin: 100px auto 0;
+  line-height: 90px;
+  border: 10px solid #E6E7E8;
+  font-size: 40px;
+  display: block;
+}
+
+.search:focus,
+.search:active {
+  outline: none !important;
+}
+
+.suggestions {
+  list-style: none;
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.city {
+  line-height: 50px;
+  background: #E6E7E8;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.place {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.population {
+  font-size: 14px;
+  margin-right: 20px;
+  float: right;
+}
+
+.hl {
+  background: yellow;
+  text-transform: capitalize;
+}
