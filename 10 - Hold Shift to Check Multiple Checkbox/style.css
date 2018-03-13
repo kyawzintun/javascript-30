@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  background: #FFD54F;
+}
+
+.inbox {
+  width: 500px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.item {
+  display: table;
+  width: 100%;
+  line-height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+input[type="checkbox"] {
+  display: table-cell;
+  width: 10%;
+  margin-left: 20px;
+}
+
+.item p {
+  display: table-cell;
+  width: 90%;
+  border-left: 1px solid #ddd;
+  padding-left: 15px;
+}
+
+input[type=checkbox]:checked+p {
+  text-decoration: line-through;
+}
