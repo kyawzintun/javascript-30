@@ -1,0 +1,93 @@
+html {
+  background: url("./restaurant.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+svg {
+ fill: white;
+ background: rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ border-radius: 50%;
+ width: 200px;
+ margin-bottom: 50px;
+}
+
+.wrapper {
+  width: 270px;
+  background: #fff;
+  margin: 0 auto;
+  min-height: 150px;
+  padding: 10px;
+}
+
+.wrapper h2 {
+  font-weight: 200;
+  font-size: 22px;
+}
+
+ul, li {
+  list-style: none;
+  text-align: left;
+}
+
+ul {
+  padding-left: 5px ;
+}
+
+li {
+  line-height: 45px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li input {
+  display: none;
+}
+
+ul li input + label::before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+
+ul li input:checked + label::before {
+  content: "🌮";
+}
+
+ul li label {
+  text-transform: capitalize;
+}
+
+.create-item {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.create-item input {
+  width: 160px;
+}
+
+.create-item button {
+  background: gray;
+  cursor: pointer;
+}
+
+.create-item input, .create-item button {
+  line-height: 25px;
+}
+
+.create-item input,
+.create-item button:active,
+.create-item button:focus {
+  outline: none !important;
+}
+
