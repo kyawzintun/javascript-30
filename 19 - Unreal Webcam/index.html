@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webcam Fun</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="photobooth">
+    <div class="ctrl-wrap">
+      <div class="controls">
+        <button onClick="takePhoto()">Take Photo</button>
+        <div class="rgb">
+          <label for="rmin">Red Min:</label>
+          <input type="range" name="rmin" id="rmin" min=0 max=255>
+          <label for="rmax">Red Max:</label>
+          <input type="range" name="rmax" id="rmax" min=0 max=255>
+          <br>
+
+          <label for="gmin">Green Min:</label>
+          <input type="range" name="gmin" id="gmin" min=0 max=255>
+          <label for="gmax">Green Max:</label>
+          <input type="range" name="gmax" id="gmax" min=0 max=255>
+          <br>
+
+          <label for="bmin">Blue Min:</label>
+          <input type="range" name="bmin" id="bmin" min=0 max=255>
+          <label for="bmax">Blue Max:</label>
+          <input type="range" name="bmax" id="bmax" min=0 max=255>
+        </div>
+      </div>
+      <video class="player" hidden></video>
+    </div>
+    
+    <div class="show-img">
+      <canvas class="photo"></canvas>
+      <div class="strip"></div>
+    </div>
+  </div>
+
+  <audio class="snap" src="./snap.mp3" hidden></audio>
+
+  <script src="./script.js"></script>
+</body>
+</html>
