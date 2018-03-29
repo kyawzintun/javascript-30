@@ -1,0 +1,14 @@
+{
+  "name": "native-speech-recognition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '*.html, *.js, *.css'"
+  },
+  "author": "KZT",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.23.6"
+  }
+}
