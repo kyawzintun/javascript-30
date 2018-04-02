@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sticky Nav</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>A Story About Getting Lost</h1>
+  </header>
+
+  <nav id="navbar">
+    <ul>
+      <li class="logo"><a href="">LOST</a></li>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Feedback</a></li>
+      <li><a href="">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <div class="site-wrap">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corp oris a qui libero
+      ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blandit iis quod quas laborum
+      nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dig nissimos.</p>
+  </div>
+
+  <script>
+    const nav = document.querySelector('#navbar');
+    const topOfNav = nav.offsetTop;
+
+    function fixedNav() {
+      if(window.scrollY >= topOfNav) {
+        document.body.style.paddingTop = nav.offsetHeight + 'px';
+        document.body.classList.add('fixed-nav');
+      } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-nav');
+      }
+    }
+
+    window.addEventListener('scroll', fixedNav)
+  </script>
+</body>
+</html>
