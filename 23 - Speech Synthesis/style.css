@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.voiceinator {
+  width: 50rem;
+  padding: 2rem;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.voiceinator h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+  background: #ffc600;
+  border-bottom: 5px solid #F3C010;
+  padding: .5rem;
+  margin: -2rem 0 2rem -2rem;
+  width:calc(100% + 4rem);
+  text-shadow: 3px 3px 0 #F3C010;
+}
+
+.voiceinator select,
+.voiceinator input,
+.voiceinator button,
+.voiceinator textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 0px;
+  font-size: 2rem;
+  outline: 0;
+  background: #F7F7F7;
+}
+
+.voiceinator textarea {
+  height: 20rem;
+}
+
+.voiceinator button {
+  width: 49%;
+  float: left;
+  background: #ffc600;
+  font-family: cursive;
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  border-bottom: 5px solid #F3C010;
+  position: relative;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
