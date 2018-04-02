@@ -95,3 +95,7 @@ li a {
   transform: scale(0.98);
   transition: transform .5s;
 }
+
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}

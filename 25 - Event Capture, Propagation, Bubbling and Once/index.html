@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Capture, Propagation, Bubbling and Once</title>
+  <style>
+    html {
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    div {
+      width: 100%; 
+      padding: 150px 100px;
+    }
+
+    .one {
+      background: thistle;
+    }
+
+    .two {
+      background: mistyrose;
+    }
+
+    .three {
+      background: coral;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+    <div class="two">
+      <div class="three"></div>
+    </div>
+  </div>
+
+  <script> 
+    const divs = document.querySelectorAll('div');
+
+    function logText(e) {
+      console.log(this.classList.value);
+      // e.stopPropagation();
+    }
+
+    divs.forEach(div => div.addEventListener('click', logText, {capture: false, once: true}));
+  </script>
+</body>
+</html>
